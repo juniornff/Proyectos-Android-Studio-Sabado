@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Preguntas y Respuestas\nBIblicas"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvHighscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnEmpezar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="Puntuacion Mas Alta: 0"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnEmpezar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Empezar" />
+
+    <TextView
+        android:id="@+id/tvDificultadMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnEmpezar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:textColor="@android:color/black"
+        android:text="Dificultad" />
+
+    <Spinner
+        android:id="@+id/spDificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDificultadMain"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

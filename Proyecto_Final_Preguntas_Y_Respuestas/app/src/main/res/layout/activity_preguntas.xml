@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context=".PreguntasActivity">
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuacion: 0"
+        android:textColor="@android:color/black"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/tvQuestionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvScore"
+        android:text="Pregunta: 1/x"
+        android:textColor="@android:color/black"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/tvDificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuestionCount"
+        android:freezesText="true"
+        android:text="Dificultad: "
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvCountdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="00:30"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        android:freezesText="true" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rgQuestions"
+        android:layout_marginBottom="16dp"
+        android:text="Aqui ira el texto de la pregunta\nAqui ira el texto de la pregunta\nAqui ira el texto de la pregunta"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:freezesText="true" />
+
+    <RadioGroup
+        android:id="@+id/rgQuestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/rbRespuesta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcion 1"
+            android:freezesText="true" />
+
+        <RadioButton
+            android:id="@+id/rbRespuesta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcion 2"
+            android:freezesText="true" />
+
+        <RadioButton
+            android:id="@+id/rbRespuesta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opcion 3"
+            android:freezesText="true" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirmNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgQuestions"
+        android:layout_marginTop="16dp"
+        android:text="Confirmar"
+        android:freezesText="true" />
+
+</RelativeLayout>
