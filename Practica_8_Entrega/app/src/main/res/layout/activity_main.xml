@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="130dp"
+        android:gravity="center"
+        android:numColumns="2"/>
+
+    <!--<ImageView
+        android:id="@+id/btdimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+    <Button
+        android:id="@+id/btn_btd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Escuchar"/>
+
+    <ImageView
+        android:id="@+id/shaimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+    <Button
+        android:id="@+id/btn_sha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Escuchar" />
+
+    <ImageView
+        android:id="@+id/ttglimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+    <Button
+        android:id="@+id/btn_ttgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Escuchar"/>
+
+    <ImageView
+        android:id="@+id/zeldaimage"
+        android:layout_width="130dp"
+        android:layout_height="130dp"/>
+
+    <Button
+        android:id="@+id/btn_zelda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Escuchar"/>-->
+
+</LinearLayout>
